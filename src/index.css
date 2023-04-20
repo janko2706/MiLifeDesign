@@ -1,13 +1,39 @@
+:root {
+  --dust-storm: rgba(216, 198, 202, 1); /* #d9c7cb */
+  --eggplant: rgba(89, 66, 80, 1); /* #594251 */
+  --grullo: rgba(165, 140, 137, 1); /* #a68c8a */
+  --anti-flash-white: rgba(242, 242, 242, 1); /* #f2f2f2 */
+  --smokey-black: rgba(12, 12, 12, 1); /* #0d0d0d */
+  --white: #ffffff;
+}
+* {
+  user-select: none !important;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 0px;
+  overflow-x: hidden !important;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--anti-flash-white);
+}
+.swiper {
+  position: absolute;
+  top: 50%;
+  z-index: 9 !important;
+  width: 80%;
+  height: 20%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 408px;
+  height: 272px;
 }
