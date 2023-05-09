@@ -1,0 +1,353 @@
+.home {
+  width: 100vw;
+  margin: 0;
+}
+.homeNews {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom-left-radius: 25%;
+  margin-bottom: 5%;
+}
+.homeNews > .featureContentCont {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0 5em;
+  flex-direction: column;
+}
+.homeNews > .featureContentCont > h1 {
+  font-size: 8vmin;
+  color: white;
+  font-weight: 500;
+  margin: 0;
+}
+
+.homeNews > .featureContentCont > a > button {
+  width: 20vmin;
+  height: 7vmin;
+  padding: 1% 2%;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  font-family: 'Jost';
+  background-color: #292f36;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.homeNews > .featureContentCont > a > button:hover {
+  background: #cda274;
+}
+.homeNews > .featureContentCont > a > button:hover > * {
+  transition: all 0.3s ease-in-out;
+  color: white !important;
+}
+.homeOther {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* HOME PLANS */
+.homePlans {
+  font-family: 'Jost';
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+  font-size: 1.2em;
+}
+
+.homePlan {
+  text-align: center;
+  margin: 0 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePlan > a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePlan > a > button {
+  margin: 5% 0;
+  font-size: 0.9em;
+  width: 30%;
+  padding: 4% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+/* HOME PROJECTS */
+.homeAboutUs {
+  width: 100%;
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeAboutUs > .hp-subtext {
+  width: 50%;
+}
+
+.homeAboutUs > .hp-subtext > h1 {
+  width: 70%;
+}
+
+.homeAboutUs > .hp-subtext > p {
+  width: 86%;
+}
+
+.hp-img {
+  width: 90%;
+  border-top-right-radius: 50vmin;
+  border-bottom-left-radius: 10vmin;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* CALL US */
+.callUs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10% 0;
+}
+
+.callUs > a {
+  width: 40%;
+  display: flex;
+}
+
+.callUs > a > button {
+  width: 100%;
+  font-size: 1em;
+  padding: 12% 0;
+  margin: 5% 0;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292f36;
+  color: white;
+  cursor: pointer;
+}
+
+/* PEOPLE THOUGHTS */
+.people-thoughts {
+  width: 94%;
+  padding: 5% 3% 7% 3%;
+  background-color: #f4f0ec;
+  text-align: center;
+  border-radius: 35px;
+}
+
+.people-thoughts > h1 {
+  margin: 3% auto;
+  width: 40%;
+}
+
+.people {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  width: 26%;
+  text-align: start;
+  padding: 3%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.person-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.person-title > div {
+  object-fit: cover;
+  width: 27%;
+  margin-right: 5%;
+}
+.person-title > div > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.person-title > p {
+  font-family: 'Dm Serif Display';
+  font-size: 17px;
+  width: 100%;
+}
+
+.person-title > p > span {
+  font-family: 'Jost';
+  font-size: 14px;
+  color: #4d5053;
+}
+
+.thought {
+  font-family: 'Jost';
+  color: #4d5053;
+  font-size: 15px;
+}
+
+/* HOME PROJECTS */
+.homeProjects {
+  width: 100%;
+  text-align: center;
+}
+
+.homeProjects > h1 {
+  margin: 0;
+}
+
+.homeProjects > p {
+  width: 70%;
+  margin: 3% auto;
+}
+
+.hp-list {
+  margin: 5% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hp-project {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1 1 40%; */
+  width: 45%;
+  margin: 3% 0;
+}
+
+.hp-pro-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hp-pro-img > img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.hp-pro-detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hp-pro-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+}
+
+.hp-prj-title {
+  font-family: 'Dm Serif Display';
+  font-size: 18px;
+  margin: 8% 0 4% 0;
+  width: 100%;
+  color: #292f36;
+}
+
+.hp-prj-path {
+  width: 100%;
+  font-size: 14px;
+  color: #4d5053;
+  font-family: 'Jost';
+  margin: 0;
+  width: 50%;
+}
+
+.hp-pro-btn {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hp-pro-btn > a {
+  width: 80%;
+  display: flex;
+}
+
+.hp-pro-btn > a > button {
+  width: 90%;
+  border-radius: 50%;
+  padding: 27%;
+  background-color: #f4f0ec;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* HOME EXPERIENCE */
+
+.home-experience {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f0ec;
+  padding: 5% 15%;
+  margin: 5% auto 7% auto;
+}
+
+.home-experience > div {
+  text-align: center;
+}
+
+.home-experience > div > p:last-child {
+  font-family: 'Jost';
+}
+
+.home-experience > div > .num {
+  font-family: 'Dm Serif Display';
+  font-size: 45px;
+  margin: 0;
+  color: #cda274;
+}
+
+.h-s-project {
+  border-right: 1px solid #cda274;
+  border-left: 1px solid #cda274;
+  padding: 0% 8%;
+  margin: 0 6% 0 6%;
+}
+.h-a-project {
+  border-right: 1px solid #cda274;
+  padding: 0% 8% 0 0;
+  margin: 0 8% 0 0;
+}

@@ -1,36 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { RouterProvider } from 'react-router-dom';
-import Routes from './Routes';
-import NavBar from './Components/NavBar/NavBar';
-import AnimatedCursor from 'react-animated-cursor';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AnimatedCursor
-      innerSize={10}
-      outerSize={35}
-      color='89, 66, 80'
-      outerAlpha={0.2}
-      innerScale={0.7}
-      outerScale={1.3}
-      clickables={[
-        'a',
-        'input[type="text"]',
-        'input[type="email"]',
-        'input[type="number"]',
-        'input[type="submit"]',
-        'input[type="image"]',
-        'label[for]',
-        'select',
-        'textarea',
-        'button',
-        '.link',
-      ]}
-    />
-    <NavBar />
-    <RouterProvider router={Routes} />
+    <App />
   </React.StrictMode>
 );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

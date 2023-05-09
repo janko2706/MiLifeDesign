@@ -1,0 +1,113 @@
+.contact {
+  width: 100%;
+}
+
+.contact-header {
+  display: flex;
+  height: 42vh;
+  font-family: 'DM Serif Display';
+  background-repeat: no-repeat;
+  background-image: url('../../images/backgroung/contact-bg.jpg');
+  background-size: cover;
+}
+
+.contact-header > h1 {
+  width: 30%;
+  padding: 2% 3% 0.5% 3%;
+  background-color: white;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  align-self: flex-end;
+  text-align: center;
+  margin: 0 auto;
+  color: #292f36;
+}
+
+.contact-header > h1 > p {
+  color: #4d5053;
+  font-size: 14px;
+  font-family: Jost;
+}
+
+.contact-content {
+  align-items: center;
+  width: 90%;
+  display: flex;
+  gap: 5%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.contact-form {
+  display: flex;
+  width: 100%;
+}
+
+.contact-form-info {
+  background-color: #f4f0ec;
+  border-radius: 30px;
+  padding: 5% 0%;
+  height: 50%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-form-info > div {
+  text-align: center;
+}
+
+.contact-form-info > .icons > p {
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  padding-bottom: 5%;
+}
+
+.icon {
+  border: 1px solid white;
+  color: #cda274;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5%;
+}
+
+.contact-smedias {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-smedias > ul {
+  display: flex;
+  padding: 0;
+  column-gap: 10vmin;
+}
+
+.contact-smedias > ul > li {
+  list-style-type: none;
+}
+.contact-smedias > ul > li > a {
+  font-size: larger;
+  padding: 1.5vmin;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.contact-smedias > ul > li:hover > a {
+  background: lightskyblue !important;
+  color: white !important;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin: 4% 0%;
+}
+
+iframe {
+  border-radius: 20px;
+}

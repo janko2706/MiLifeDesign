@@ -1,0 +1,12 @@
+{
+  "services": [
+    {
+      "service_name": "Izvedbeno rješenje",
+      "service_content": "Prvenstveno je namijenjena klijentima koji imaju nedostatak vremena ili iskustva u provođenju građevinskih, stolarskih i drugih radova."
+    },
+    {
+      "service_name": "Idejno rješenje",
+      "service_content": "Izrada nacrta namještaja Izrada nacrta novih pozicija elektroinstalacija (nacrt rasvjete, nacrt prekidača, nacrt utičnica, nacrt ozvučenja), itd."
+    }
+  ]
+}
