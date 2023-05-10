@@ -13,7 +13,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  position: relative;
   text-decoration: none;
   font-family: 'Jost';
 }
@@ -47,4 +46,24 @@ h1 {
 
 .App-link {
   color: #61dafb;
+}
+@media (max-width: 800px) {
+  .mobileHome {
+    max-width: 100vw;
+    overflow: auto;
+  }
+  .mobileTrack {
+    overflow: hidden;
+  }
+  .mobileProject {
+    display: none;
+  }
+  body {
+    font-size: 11px !important;
+  }
+  .titleStyledStrokedz {
+    transform: translate(-40vmin, -110vmin) !important;
+    width: 100%;
+    animation: none !important;
+  }
 }

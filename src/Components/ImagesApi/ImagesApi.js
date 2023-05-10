@@ -95,7 +95,7 @@ export const ImagesApi = [
       project1_5,
       project1_6,
     ],
-    name: 'Project Kolarovec',
+    name: 'Projekt Kolarovec',
     about: { location: 'Kolarovec', info: 'Minimalistic modern house' },
   },
   {
@@ -110,7 +110,7 @@ export const ImagesApi = [
       project2_8,
       project2_9,
     ],
-    name: 'Project Pula',
+    name: 'Projekt Pula',
     about: { location: 'Pula', info: 'Eclectic 1 bedroom apartament' },
   },
   {
@@ -125,7 +125,7 @@ export const ImagesApi = [
       project3_8,
       project3_9,
     ],
-    name: 'Project Zadar',
+    name: 'Projekt Zadar',
     about: { location: 'Zadar', info: 'An elegant villa on the sea' },
   },
   {
@@ -140,7 +140,7 @@ export const ImagesApi = [
       project4_8,
       project4_9,
     ],
-    name: 'Project Spansko',
+    name: 'Projekt Spansko',
     about: { location: 'Zagreb-Spansko', info: 'A little romantic apartament' },
   },
   {
@@ -155,7 +155,7 @@ export const ImagesApi = [
       project5_8,
       project5_9,
     ],
-    name: 'Project Ivanec',
+    name: 'Projekt Ivanec',
     about: { location: 'Ivanec', info: 'Modern penthouse' },
   },
   {
@@ -170,7 +170,7 @@ export const ImagesApi = [
       project6_8,
       project6_9,
     ],
-    name: 'Project Zapresic',
+    name: 'Projekt Zapresic',
     about: { location: 'Zapresic', info: 'Stylish 2 bedroom apartament' },
   },
   {
@@ -185,7 +185,7 @@ export const ImagesApi = [
       project7_8,
       project7_9,
     ],
-    name: 'Project Split',
+    name: 'Projekt Split',
     about: { location: 'Split', info: 'Astonishing villa on the sea' },
   },
   {
@@ -200,7 +200,7 @@ export const ImagesApi = [
       project8_8,
       project8_9,
     ],
-    name: 'Project Ugljan',
+    name: 'Projekt Ugljan',
     about: { location: 'Island of Ugljan', info: 'A traditional rustic villa' },
   },
   {
@@ -215,7 +215,7 @@ export const ImagesApi = [
       project9_8,
       project9_9,
     ],
-    name: 'Project Playground',
+    name: 'Projekt Playground',
     about: { location: 'Samobor', info: 'A playfull children playground' },
   },
   {
@@ -229,7 +229,7 @@ export const ImagesApi = [
       project10_7,
       project10_5,
     ],
-    name: 'Project Brac',
+    name: 'Projekt Brac',
     about: { location: 'Isalnd of Brac', info: 'Heritage boutique hotel' },
   },
 ];

@@ -4,7 +4,7 @@ import { ImagesApi } from '../../Components/ImagesApi/ImagesApi.js';
 import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 import { IoIosArrowForward } from 'react-icons/io';
-import services from '../../servicesPage/services.json';
+import services from '../servicesPage/services.json';
 import thoughts from './peopleThoughts.json';
 import CountUp from 'react-countup';
 import customer1 from '../../images/home/customer.jpg';
@@ -42,6 +42,10 @@ export function Home() {
         }}
       >
         <div className='featureContentCont'>
+          <div className='coverForBG'> </div>
+          <h2>
+            MI <span className='x-sign'>Life Design</span>
+          </h2>
           <h1>Inspire Living</h1>
 
           <Link to='/about'>

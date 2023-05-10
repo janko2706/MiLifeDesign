@@ -1,0 +1,16 @@
+.imageStyled {
+  cursor: pointer;
+  top: 90%;
+  object-fit: cover;
+  user-select: none;
+
+  animation-timing-function: ease;
+}
+@keyframes lower-scroll {
+  from {
+    transform: translateY(-200%) translateX(-200%);
+  }
+  to {
+    transform: translateY(0%) translateX(0%);
+  }
+}
