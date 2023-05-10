@@ -1,4 +1,4 @@
-import { FaInstagram, FaFacebookF, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './footer.css';
 
@@ -20,18 +20,13 @@ export function Footer() {
           <div className='f-smedia'>
             <ul>
               <li>
-                <a href='https://www.facebook.com/'>
+                <a href='https://www.facebook.com/milifedesign.hr/'>
                   <FaFacebookF />
                 </a>
               </li>
               <li>
-                <a href='https://www.instagram.com/'>
+                <a href='https://www.instagram.com/mi_life_design/'>
                   <FaInstagram />
-                </a>
-              </li>
-              <li>
-                <a href='https://www.linkedin.com/'>
-                  <FaLinkedin />
                 </a>
               </li>
             </ul>
@@ -60,27 +55,55 @@ export function Footer() {
           <p>
             <a href='mailto: contact@interno.com'>info@milifedesign.com</a>
           </p>
-          <p>099 315 0511</p>
+          <p>
+            <a href='tel:+38599 31 50 511'>Ivana Bogović: + 385 99 31 50 511</a>
+          </p>
+          <p>
+            <a href='tel:+385 98 774 610'>Mate Tokić: + 385 98 774 610</a>
+          </p>
+          <p>
+            <a href='tel:+ 385 1 2385 441'> Ured: + 385 1 2385 441</a>
+          </p>
         </section>
       </div>
       <div className='terms'>
         <ul>
           <ol>
-            <Link to={`/terms`}>&bull; Terms & Conditions</Link>
+            <Link className='innerTermsLink' to={`/terms`}>
+              &bull; Terms & Conditions
+            </Link>
           </ol>
           <ol>
-            <Link to={`/privacy-policy`}>&bull; Privacy Policy</Link>
+            <Link className='innerTermsLink' to={`/privacy-policy`}>
+              &bull; Privacy Policy
+            </Link>
           </ol>
           <ol>
-            <Link to={`/cookies-policy`}>&bull; Cookies Policy</Link>
+            <Link className='innerTermsLink' to={`/cookies-policy`}>
+              &bull; Cookies Policy
+            </Link>
           </ol>
           <ol>
-            <Link to={`/faq`}>&bull; FAQ</Link>
+            <Link className='innerTermsLink' to={`/faq`}>
+              &bull; FAQ
+            </Link>
           </ol>
         </ul>
       </div>
       <div className='f-copyright'>
-        <p>Copyright © MI Life Design | Designed by Jan</p>
+        <p>
+          Copyright © MI Life Design | Designed by{' '}
+          <a
+            href='https://janovacoolstranica.com/'
+            rel='noreferrer'
+            target='_blank'
+            style={{
+              color: 'black',
+            }}
+          >
+            Jan
+          </a>
+        </p>
       </div>
     </div>
   );

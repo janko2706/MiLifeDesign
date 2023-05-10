@@ -80,11 +80,6 @@ const Images = (props) => {
           bgCont.classList.add('selectedPictureCont');
           bgCont.classList.add('bgToRemove');
           bgPicture.classList.add('selectedPicture');
-          bgCont.addEventListener('wheel', (e) => {
-            if (e.deltaY > 0) {
-              navigate(`/${props.title}`);
-            }
-          });
           pictureText.addEventListener('click', (e) => {
             navigate(`/${props.title}`);
           });

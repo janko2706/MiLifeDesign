@@ -1,8 +1,5 @@
 import './services.css';
 import services from './services.json';
-import { BsArrowRight } from 'react-icons/bs';
-import { AiOutlineArrowRight } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
 import photo1 from '../../images/services1.jpg';
 import icon1 from '../../images/Icon1.svg';
 import photo2 from '../../images/services2.jpg';
@@ -48,9 +45,7 @@ export function Services() {
   return (
     <div className='services'>
       <div className='services-header'>
-        <h1>
-          Services<p>Home / Services</p>
-        </h1>
+        <h1>Usluge</h1>
       </div>
       <div className='service-types'>
         {services.services.map((type, index) => {
@@ -58,23 +53,13 @@ export function Services() {
             <div className='service-type' onClick={handleChange} key={index}>
               <h2 onClick={handleChangeTwo}>{type.service_name}</h2>
               <p onClick={handleChangeTwo}>{type.service_content}</p>
-              <Link to={`/servicesingle`}>
-                <button>
-                  Read More{' '}
-                  <BsArrowRight style={{ marginLeft: '5px' }} color='#CDA274' />
-                </button>
-              </Link>
             </div>
           );
         })}
       </div>
       <div className='howWeWork'>
         <div className='how-title'>
-          <h1>How We Work</h1>
-          <p>
-            It is a long established fact will be distracted.Lorem Ipsum is
-            simply dummy text of the printing and typesetting industry.
-          </p>
+          <h1>Naš proces</h1>
         </div>
         <div className='how-content'>
           <div className='hc-img'>
@@ -86,7 +71,7 @@ export function Services() {
               <p>01</p>
             </div>
             <div className='hc-subtext'>
-              <h2>Concept & Details</h2>
+              <h2>Prvi sastanci</h2>
               <p>
                 It is a long established fact will be distracted. Lorem Ipsum is
                 simply dummy from text of the and typesetting indufstry.{' '}
@@ -102,7 +87,7 @@ export function Services() {
               <p>02</p>
             </div>
             <div className='hc-subtext'>
-              <h2>Idea for work</h2>
+              <h2>Dizajn</h2>
               <p>
                 It is a long established fact will be distracted. Lorem Ipsum is
                 simply dummy from text of the and typesetting indufstry.{' '}
@@ -124,7 +109,7 @@ export function Services() {
               <p>03</p>
             </div>
             <div className='hc-subtext'>
-              <h2>Design</h2>
+              <h2>Vizualizacija</h2>
               <p>
                 It is a long established fact will be distracted. Lorem Ipsum is
                 simply dummy from text of the and typesetting indufstry.{' '}
@@ -140,7 +125,7 @@ export function Services() {
               <p>04</p>
             </div>
             <div className='hc-subtext'>
-              <h2>Perfection</h2>
+              <h2>Savršenstvo</h2>
               <p>
                 It is a long established fact will be distracted. Lorem Ipsum is
                 simply dummy from text of the and typesetting indufstry.{' '}
@@ -151,20 +136,6 @@ export function Services() {
             <img src={photo4} alt='concept'></img>
           </div>
         </div>
-      </div>
-
-      <div className='interno'>
-        <h1>Wanna join the interno?</h1>
-        <p>It is a long established fact will be distracted.</p>
-        <Link>
-          <button>
-            Contact With Us
-            <AiOutlineArrowRight
-              style={{ marginLeft: '5px' }}
-              color='#292F36'
-            />
-          </button>
-        </Link>
       </div>
     </div>
   );

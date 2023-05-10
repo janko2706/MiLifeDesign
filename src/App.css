@@ -5,6 +5,7 @@
   --primary: #cda274;
   --secondary: #ffffff;
   --dark: #292f36;
+  --light: rgb(244, 240, 236);
 }
 
 * {
@@ -52,18 +53,82 @@ h1 {
     max-width: 100vw;
     overflow: auto;
   }
+  .concept-img {
+    display: none !important;
+  }
+  .con {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .hc-img {
+    display: none !important;
+  }
+  .ep-q-img {
+    display: none !important;
+  }
+  .ep-questions {
+    width: 100% !important;
+  }
+  .contact-content {
+    flex-direction: column !important;
+  }
+  .hc-text-anima > img {
+    display: none !important;
+  }
+
+  .c-text {
+    width: 100% !important;
+  }
   .mobileTrack {
     overflow: hidden;
   }
   .mobileProject {
     display: none;
   }
+  .homeStyled {
+    background-color: white !important;
+  }
   body {
     font-size: 11px !important;
   }
+  .backButton {
+    display: none;
+  }
+  .terms {
+    display: none !important;
+  }
   .titleStyledStrokedz {
+    font-size: 8vmin !important;
     transform: translate(-40vmin, -110vmin) !important;
     width: 100%;
     animation: none !important;
+  }
+  .hp-pro-btn {
+    display: none !important;
+  }
+  .homeNews > .featureContentCont > a > button {
+    width: 40vmin !important;
+    padding: 3vmin 2vmin !important;
+  }
+  .f-info {
+    width: 100%;
+    flex-direction: column !important;
+  }
+  .f-social-medias {
+    display: flex;
+    width: 100% !important;
+    justify-content: space-between;
+  }
+  .f-about-text {
+    display: none;
+  }
+
+  .f-pages,
+  .f-services {
+    width: 100%;
+  }
+  .f-contact {
+    width: 100% !important;
+    margin-bottom: 2vmin;
   }
 }

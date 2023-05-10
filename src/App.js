@@ -38,7 +38,7 @@ function App() {
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/restricted-page' element={<RestrictedPage />}></Route>
         <Route path='/faq' element={<Faq />}></Route>
-        <Route path='/aboutus' element={<About />}></Route>
+        <Route path='/about' element={<About />}></Route>
         <Route path='/error' element={<NotFound />}></Route>
         <Route path='/*' element={<NotFound />}></Route>
         <Route path='/services' element={<Services />}></Route>

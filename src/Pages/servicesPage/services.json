@@ -2,11 +2,11 @@
   "services": [
     {
       "service_name": "Izvedbeno rješenje",
-      "service_content": "Prvenstveno je namijenjena klijentima koji imaju nedostatak vremena ili iskustva u provođenju građevinskih, stolarskih i drugih radova."
+      "service_content": "Izvedbeno rješenje vrsta je usluge koju nudimo klijentima nakon odrađenog idejnog rješenja. Prvenstveno je namijenjena klijentima koji imaju nedostatak vremena ili iskustva u provođenju građevinskih, stolarskih i drugih radova. Izvedbeno rješenje obuhvaća: kompletno praćenje i nadzor nad svim radovima i zahvatima na projektu, odabir i organizaciju izvođača radova te koordinaciju njihova rada. Naš tim obuhvaća niz iskusnih stručnjaka iz svih područja potrebnih za finalnu realizaciju projekta čime Vam u potpunosti olakšavamo ovo po mnogima izazovno iskustvo."
     },
     {
       "service_name": "Idejno rješenje",
-      "service_content": "Izrada nacrta namještaja Izrada nacrta novih pozicija elektroinstalacija (nacrt rasvjete, nacrt prekidača, nacrt utičnica, nacrt ozvučenja), itd."
+      "service_content": "Izrada osnovnog tlocrta s pozicijama namještaja, Izrada vizualizacije u Sketchup-u (renderirano u Lumionu), Izrada nacrta namještaja, Izrada nacrta novih pozicija elektroinstalacija (nacrt rasvjete, nacrt prekidača, nacrt utičnica, nacrt ozvučenja), Izrada sheme slaganja pločica troškovnika te odabir svih elemenata dizajna (rasvjete, podova, zidne boje, kupovnog namještaja, zavjesa, tepiha, dekoracije), Ukoliko se radi o projektu uređenja eksterijera, uz sve navedeno, izrađuju se i tehnički nacrti staza, stepeništa te škarpi potrebnih za nivelaciju dvorišta i njihovo odjeljivanje u zone te izbor biljnog materijala predviđenog u projektu"
     }
   ]
 }

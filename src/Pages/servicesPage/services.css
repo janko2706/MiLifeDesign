@@ -5,8 +5,10 @@
 .services-header {
   width: 100%;
   min-height: 43vh;
-  background-image: url('../../images/backgroung/servicesBg.jpg');
+  background-image: url('../../Assets/Pictures/Projekt11/5.webp');
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -15,19 +17,13 @@
 }
 
 .services-header > h1 {
-  width: 20%;
+  width: 40vmin;
   margin: 0;
-  padding: 2% 3% 0.5% 3%;
+  padding: 2% 3% 0 3%;
   background-color: white;
   color: #292f36;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-}
-
-.services-header > h1 > p {
-  color: #4d5053;
-  font-size: 14px;
-  font-family: Jost;
 }
 
 /* SERVICE TYPES */
@@ -106,6 +102,7 @@
 .hc-img {
   width: 50%;
   object-fit: cover;
+  display: block;
 }
 
 .hc-img > img {
@@ -123,11 +120,6 @@
 
 .how-title > h1 {
   margin: 0;
-}
-
-.how-title > p {
-  font-family: 'Jost';
-  color: #4d5053;
 }
 
 .hc-text {
@@ -156,40 +148,4 @@
 .hc-subtext > p {
   color: #4d5053;
   font-size: 14px;
-}
-
-/* INTERNO */
-.interno {
-  width: 60%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin: 10% auto;
-  padding: 3% 0;
-  background-color: #292f36;
-  border-radius: 50px;
-  color: white;
-}
-
-.interno > h1 {
-  margin: 0;
-  color: white;
-}
-
-.interno > a {
-  width: 22%;
-  margin: 3% 0%;
-}
-
-.interno > a > button {
-  color: white;
-  width: 100%;
-  padding: 8% 0%;
-  border-radius: 15px;
-  border: none;
-  background-color: #cda274;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

@@ -1,10 +1,13 @@
 import React, { useCallback, useState } from 'react';
 import './styles.css';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import ImageViewer from 'react-simple-image-viewer';
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+import { RiArrowGoBackLine } from 'react-icons/ri';
 
 const Project = (props) => {
+  const navigate = useNavigate();
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const openImageViewer = useCallback((index) => {
@@ -23,6 +26,16 @@ const Project = (props) => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.77, 0.16, 0.64, 0.91] }}
     >
+      <div
+        style={{ cursor: 'pointer' }}
+        onClick={() => {
+          navigate(-1);
+        }}
+        title='Nazad'
+        className='backButton'
+      >
+        <RiArrowGoBackLine />
+      </div>
       <div className='mobileProject projectStyled'>
         <div className='textCont'>
           <div>Location: {props.about.location}</div>

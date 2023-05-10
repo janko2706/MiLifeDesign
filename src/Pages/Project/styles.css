@@ -6,6 +6,20 @@
   overflow: hidden;
   z-index: -1;
 }
+.backButton {
+  position: fixed;
+  color: white;
+  top: 18vh;
+  left: 6vw;
+  transition: all 0.3s ease-in-out;
+}
+.backButton:hover {
+  color: var(--primary);
+}
+.backButton > * {
+  width: 5vmin;
+  height: 5vmin;
+}
 .projectPicsStyled {
   background-color: var(--primary);
   height: 100%;

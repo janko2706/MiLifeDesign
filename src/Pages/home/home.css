@@ -13,14 +13,6 @@
   position: relative;
   margin-bottom: 5%;
 }
-.homeNews::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  left: 0;
-}
 
 .homeNews > .featureContentCont {
   display: flex;
@@ -87,9 +79,8 @@
 }
 
 .homeNews > .featureContentCont > a > button {
-  width: 20vmin;
-  height: 7vmin;
-  padding: 1% 2%;
+  width: 25vmin;
+  padding: 1vmin 2vmin;
   border: none;
   border-radius: 10px;
   font-size: large;
@@ -126,7 +117,14 @@
   margin: 5% 0;
   font-size: 1.2em;
 }
-
+.serviceContent {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  white-space: pre-wrap;
+  overflow: hidden;
+  max-height: 21vmin;
+}
 .homePlan {
   text-align: center;
   margin: 0 2%;
@@ -146,7 +144,7 @@
 .homePlan > a > button {
   margin: 5% 0;
   font-size: 0.9em;
-  width: 30%;
+  width: 20vmin;
   padding: 4% 0%;
   display: flex;
   justify-content: center;
@@ -195,16 +193,15 @@
   margin: 0 0 10% 0;
 }
 
-.callUs > a {
-  width: 40%;
+.callUs > .linkAbout {
+  width: 100%;
   display: flex;
 }
 
 .callUs > a > button {
   width: 100%;
-  font-size: 1em;
-  padding: 12% 0;
-  margin: 5% 0;
+  padding: 1vmin;
+  margin-top: 2vmin;
   border: none;
   border-radius: 15px;
   display: flex;
@@ -255,10 +252,27 @@
   object-fit: cover;
   width: 27%;
   margin-right: 5%;
+  display: block;
 }
 .person-title > div > img {
   width: 100%;
   border-radius: 50%;
+  display: block;
+}
+@media screen and (max-width: 1000px) {
+  .person-title > div > img {
+    display: none;
+  }
+  .person-title > div {
+    display: none;
+  }
+  .people {
+    flex-direction: column;
+  }
+  .person {
+    width: 100%;
+    margin-bottom: 3vmin;
+  }
 }
 
 .person-title > p {
@@ -304,7 +318,6 @@
 .hp-project {
   display: flex;
   flex-direction: column;
-  /* flex: 1 1 40%; */
   width: 45%;
   margin: 3% 0;
 }
@@ -326,7 +339,7 @@
 }
 
 .hp-pro-info {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -347,7 +360,6 @@
   color: #4d5053;
   font-family: 'Jost';
   margin: 0;
-  width: 50%;
 }
 
 .hp-pro-btn {
@@ -379,18 +391,16 @@
 .home-experience {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #f4f0ec;
   padding: 5% 15%;
   margin: 5% auto 7% auto;
+  font-family: 'Jost';
 }
 
 .home-experience > div {
   text-align: center;
-}
-
-.home-experience > div > p:last-child {
-  font-family: 'Jost';
+  margin: 0 3vmin;
 }
 
 .home-experience > div > .num {
@@ -398,16 +408,11 @@
   font-size: 45px;
   margin: 0;
   color: #cda274;
+  margin-inline: 2vmin;
 }
 
 .h-s-project {
+  padding-inline: 4vmin;
   border-right: 1px solid #cda274;
   border-left: 1px solid #cda274;
-  padding: 0% 8%;
-  margin: 0 6% 0 6%;
-}
-.h-a-project {
-  border-right: 1px solid #cda274;
-  padding: 0% 8% 0 0;
-  margin: 0 8% 0 0;
 }

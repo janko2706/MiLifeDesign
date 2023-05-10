@@ -7,12 +7,14 @@
   height: 42vh;
   font-family: 'DM Serif Display';
   background-repeat: no-repeat;
-  background-image: url('../../images/backgroung/contact-bg.jpg');
+  background-image: url('../../Assets/Pictures/Projekt7/1.webp');
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 .contact-header > h1 {
-  width: 30%;
+  width: 50vmin;
   padding: 2% 3% 0.5% 3%;
   background-color: white;
   border-top-right-radius: 30px;
@@ -62,6 +64,9 @@
   padding-left: 10%;
   padding-bottom: 5%;
 }
+.contact-form-info > .icons > p > a {
+  color: var(--dark);
+}
 
 .icon {
   border: 1px solid white;
@@ -93,17 +98,21 @@
 }
 .contact-smedias > ul > li > a {
   font-size: larger;
-  padding: 1.5vmin;
+  padding: 1vmin;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 .contact-smedias > ul > li:hover > a {
-  background: lightskyblue !important;
+  background: var(--dark) !important;
   color: white !important;
 }
 
 .map {
   display: flex;
+  width: 100%;
   justify-content: center;
   margin: 4% 0%;
 }

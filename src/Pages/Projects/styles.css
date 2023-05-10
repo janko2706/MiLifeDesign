@@ -1,7 +1,7 @@
 .homeStyled {
   height: 100vh;
   width: 100vw;
-  background-color: var(--dark-eggplant);
+  background-color: var(--light);
   margin: 0rem;
   overflow: hidden !important;
 }
@@ -41,13 +41,13 @@
 .pictureText {
   animation-name: fade-in-text;
   animation-duration: 2s;
-  @keyframes fade-in-text {
-    from {
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(0);
-    }
+}
+@keyframes fade-in-text {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 .pictureTextCont {
@@ -56,8 +56,38 @@
   font-size: 10vmin;
   color: white;
   z-index: 3;
+  width: 100%;
   top: 50%;
   left: 50%;
+  text-align: center;
   transform: translate(-50%, -50%);
   background: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.pictureTextCont:hover {
+  --color1: yellow;
+  --color2: gold;
+  --color3: orange;
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
+    0 0 40px var(--color3);
+  filter: saturate(30%);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+.pictureTextCont:hover::after {
+  opacity: 1 !important;
+  transform: translate(-50%, -50%);
+}
+.pictureTextCont::after {
+  content: '';
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(60%);
+  width: 40%;
+  height: 1vmin;
+  background-color: var(--light);
+  z-index: -1;
+  opacity: 0;
 }

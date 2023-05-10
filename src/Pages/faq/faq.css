@@ -6,13 +6,15 @@
   height: 42vh;
   font-family: 'DM Serif Display';
   background-repeat: no-repeat;
-  background-image: url('../../images/backgroung/faqBg.jpg');
+  background-image: url('../../Assets/Pictures/Projekt3/9.webp');
   margin-bottom: 10%;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 .faq-header > h1 {
-  width: 20%;
+  width: 40vmin;
   padding: 2% 3% 0.5% 3%;
   background-color: white;
   border-top-right-radius: 30px;
@@ -21,12 +23,6 @@
   text-align: center;
   margin: 0 auto;
   color: #292f36;
-}
-
-.faq-header > h1 > p {
-  color: #4d5053;
-  font-size: 14px;
-  font-family: Jost;
 }
 
 /* every question answered */
@@ -46,10 +42,6 @@
 
 .ep-questions {
   width: 60%;
-}
-
-.e-q-img {
-  width: 40%;
 }
 
 .ep-questions {
@@ -87,8 +79,9 @@
 
 .ep-q-img {
   object-fit: cover;
+  width: 40%;
+  display: block;
 }
-
 .ep-q-img > img {
   width: 100%;
   border-radius: 30px;

@@ -1,8 +1,7 @@
 import './contact.css';
-import { GiWorld } from 'react-icons/gi';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsTelephone } from 'react-icons/bs';
-import { FaInstagram, FaFacebookF, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF } from 'react-icons/fa';
 
 export function Contact() {
   return (
@@ -16,38 +15,41 @@ export function Contact() {
             <div className='icons'>
               <p>
                 <span className='icon'>
-                  <HiOutlineMail />
+                  <BsTelephone />
                 </span>
-                <a href='mailto: info@yourdomain.com'>info@yourdomain.com</a>
+                <a href='tel:+38599 31 50 511'>
+                  Ivana Bogović: + 385 99 31 50 511
+                </a>
               </p>
               <p>
                 <span className='icon'>
                   <BsTelephone />
                 </span>
-                +1 (378) 400-1234
+                <a href='tel:+385 98 774 610'>Mate Tokić: + 385 98 774 610</a>
               </p>
               <p>
                 <span className='icon'>
-                  <GiWorld />
+                  <BsTelephone />
                 </span>
-                <a href='www.yourdomain.com'>www.yourdomain.com</a>
+                <a href='tel:+ 385 1 2385 441'> Ured: + 385 1 2385 441</a>
+              </p>
+              <p>
+                <span className='icon'>
+                  <HiOutlineMail />
+                </span>
+                <a href='info@milifedesign.com'>info@milifedesign.com</a>
               </p>
             </div>
             <div className='contact-smedias'>
               <ul>
                 <li>
-                  <a href='https://www.facebook.com/'>
+                  <a href='https://www.facebook.com/milifedesign.hr/'>
                     <FaFacebookF />
                   </a>
                 </li>
                 <li>
-                  <a href='https://www.instagram.com/'>
+                  <a href='https://www.instagram.com/mi_life_design/'>
                     <FaInstagram />
-                  </a>
-                </li>
-                <li>
-                  <a href='https://www.linkedin.com/'>
-                    <FaLinkedin />
                   </a>
                 </li>
               </ul>

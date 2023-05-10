@@ -1,15 +1,15 @@
 import './home.css';
 import './homeResponsive.css';
 import { ImagesApi } from '../../Components/ImagesApi/ImagesApi.js';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 import { IoIosArrowForward } from 'react-icons/io';
 import services from '../servicesPage/services.json';
-import thoughts from './peopleThoughts.json';
+import { thoughts } from './peopleThoughts';
 import CountUp from 'react-countup';
-import customer1 from '../../images/home/customer.jpg';
 
 export function Home() {
+  const navigate = useNavigate();
   const FeaturedProjects = [
     {
       image: ImagesApi[1].pictures[3],
@@ -49,7 +49,7 @@ export function Home() {
           <h1>Inspire Living</h1>
 
           <Link to='/about'>
-            <button>
+            <button style={{ cursor: 'pointer' }}>
               O nama
               <BsArrowRight style={{ marginLeft: '13%', color: '#CDA274' }} />
             </button>
@@ -62,10 +62,10 @@ export function Home() {
             return (
               <div className='homePlan' key={ind}>
                 <h2>{s.service_name}</h2>
-                <p>{s.service_content}</p>
-                <Link to={`/project-details`}>
+                <p className='serviceContent'>{s.service_content}</p>
+                <Link to={`/services`}>
                   <button>
-                    Saznaj
+                    Saznaj vise
                     <BsArrowRight
                       style={{ marginLeft: '4%', color: 'black' }}
                     />
@@ -87,7 +87,7 @@ export function Home() {
               projects.
             </p>
             <div className='callUs'>
-              <Link to={`/contact`}>
+              <Link to={`/contact`} className='linkAbout'>
                 <button>
                   O nama
                   <BsArrowRight
@@ -108,12 +108,12 @@ export function Home() {
         <div className='people-thoughts'>
           <h1>Sto musterije kazu o nama?</h1>
           <div className='people'>
-            {thoughts.people.map((req, ind) => {
+            {thoughts.map((req, ind) => {
               return (
                 <div className='person' key={ind}>
                   <div className='person-title'>
                     <div>
-                      <img src={customer1} alt='customer'></img>
+                      <img src={req.img} alt='customer'></img>
                     </div>
                     <p>
                       {req.fullname}
@@ -146,7 +146,13 @@ export function Home() {
           <div className='hp-list'>
             {FeaturedProjects.map((item, idx) => {
               return (
-                <div className='hp-project' key={idx}>
+                <div
+                  onClick={() => {
+                    navigate(`/${item.name}`);
+                  }}
+                  className='hp-project'
+                  key={idx}
+                >
                   <div className='hp-pro-img'>
                     <img src={item.image} alt='project'></img>
                   </div>
@@ -156,7 +162,7 @@ export function Home() {
                       <p className='hp-prj-path'>{item.info}</p>
                     </div>
                     <div className='hp-pro-btn'>
-                      <Link to={`/project-details`}>
+                      <Link to={`/${item.name}`}>
                         <button>
                           <IoIosArrowForward />
                         </button>
