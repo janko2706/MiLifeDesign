@@ -24,7 +24,7 @@ export function Header() {
             <li className='menu-nav-item'>
               <Link className='menu-nav-link' to='/' onClick={closeMenu}>
                 <span>
-                  <div>Pocetna</div>
+                  <div>Početna</div>
                 </span>
               </Link>
             </li>
@@ -77,22 +77,38 @@ export function Header() {
               <p>Preporuceno</p>
             </div>
             <div className='images'>
-              <Link className='image-link' to='/projects'>
+              <Link
+                className='image-link'
+                to={`/${ImagesApi[0].name}`}
+                onClick={closeMenu}
+              >
                 <div className='image' data-label={ImagesApi[0].name}>
                   <img src={ImagesApi[0].pictures[0]} alt='' />
                 </div>
               </Link>
-              <Link className='image-link' to='/projects'>
+              <Link
+                className='image-link'
+                to={`/${ImagesApi[1].name}`}
+                onClick={closeMenu}
+              >
                 <div className='image' data-label={ImagesApi[1].name}>
                   <img src={ImagesApi[1].pictures[0]} alt='' />
                 </div>
               </Link>
-              <Link className='image-link' to='/projects'>
+              <Link
+                className='image-link'
+                to={`/${ImagesApi[2].name}`}
+                onClick={closeMenu}
+              >
                 <div className='image' data-label={ImagesApi[2].name}>
                   <img src={ImagesApi[2].pictures[0]} alt='' />
                 </div>
               </Link>
-              <Link className='image-link' to='/projects'>
+              <Link
+                className='image-link'
+                to={`/${ImagesApi[4].name}`}
+                onClick={closeMenu}
+              >
                 <div className='image' data-label={ImagesApi[4].name}>
                   <img src={ImagesApi[4].pictures[0]} alt='' />
                 </div>

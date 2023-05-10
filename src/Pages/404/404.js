@@ -1,24 +1,31 @@
 import './404.css';
+import { useNavigate } from 'react-router-dom';
 
 export function NotFound() {
+  const navigate = useNavigate();
   return (
-    <div className='notFound'>
-      <h1>404</h1>
-      {/* <div className='error-text'>
-     
-        <p>We are sorry, but the page you requested was not found</p>
+    <>
+      <section className='error-container'>
+        <span className='four'>
+          <span className='screen-reader-text'>4</span>
+        </span>
+        <span className='zero'>
+          <span className='screen-reader-text'>0</span>
+        </span>
+        <span className='four'>
+          <span className='screen-reader-text'>4</span>
+        </span>
+      </section>
+      <div className='link-container'>
         <button
+          className='more-link'
           onClick={() => {
             navigate('/');
           }}
         >
-          Back To Home
-          <BsArrowRight style={{ marginLeft: '5px' }} color='#CDA274' />
+          Povratak na početnu
         </button>
       </div>
-      <div className='error-img'>
-        <img src={photo} alt='error'></img>
-      </div> */}
-    </div>
+    </>
   );
 }

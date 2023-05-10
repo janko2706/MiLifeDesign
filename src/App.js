@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState } from 'react';
 import { Contact } from './Pages/contact/contact';
 import { Header } from './Components/headerFooter/header';
 import { Footer } from './Components/headerFooter/footer';
@@ -16,8 +17,14 @@ import { Privacy } from './Pages/Allterms/privacy';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { SmoothScroll } from './smooth';
 import { ImagesApi } from './Components/ImagesApi/ImagesApi';
+import Loader from './Components/Loader/Loader';
 
 function App() {
+  const [load, setLoad] = useState(false);
+  setTimeout(() => {
+    setLoad(true);
+  }, 4000);
+
   window.addEventListener(
     'scroll',
     () => {
@@ -30,7 +37,7 @@ function App() {
     },
     false
   );
-  return (
+  return load ? (
     <BrowserRouter>
       <SmoothScroll />
       <Header />
@@ -68,6 +75,8 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
+  ) : (
+    <Loader />
   );
 }
 
