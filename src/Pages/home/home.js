@@ -44,7 +44,7 @@ export function Home() {
         <div className='featureContentCont'>
           <div className='coverForBG'> </div>
           <h2>
-            MI <span className='x-sign'>Life Design</span>
+            MI <span>Life Design</span>
           </h2>
           <h1>Inspire Living</h1>
 
