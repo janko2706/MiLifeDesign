@@ -3,7 +3,7 @@ import './styles.css';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import ImageViewer from 'react-simple-image-viewer';
-import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+import { AiOutlineLeft, AiOutlineRight, AiOutlineClose } from 'react-icons/ai';
 import { RiArrowGoBackLine } from 'react-icons/ri';
 
 const Project = (props) => {
@@ -24,6 +24,7 @@ const Project = (props) => {
       initial={{ opacity: 0 }}
       exit={{ y: '200%' }}
       animate={{ opacity: 1 }}
+      style={{}}
       transition={{ duration: 0.5, ease: [0.77, 0.16, 0.64, 0.91] }}
     >
       <div
@@ -73,17 +74,20 @@ const Project = (props) => {
         </div>
       </div>
       {isViewerOpen && (
-        <div style={{ zIndex: '3' }}>
+        <div
+          style={{
+            zIndex: '3',
+          }}
+        >
           <ImageViewer
             src={props.projectPictures}
             currentIndex={currentImage}
             onClose={closeImageViewer}
-            disableScroll={true}
-            closeComponent={<div></div>}
+            closeComponent={<AiOutlineClose />}
             leftArrowComponent={<AiOutlineLeft />}
-            rightArrowComponent={<AiOutlineRight color='white' opacity={1} />}
+            rightArrowComponent={<AiOutlineRight />}
             backgroundStyle={{
-              backgroundColor: 'rgba(0,0,0,0.9)',
+              backgroundColor: 'rgba(0,0,0,1)',
             }}
             closeOnClickOutside={true}
           />

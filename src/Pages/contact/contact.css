@@ -120,3 +120,12 @@
 iframe {
   border-radius: 20px;
 }
+/* PHONE VERISON OF CONTACT */
+@media screen and (max-width: 1000px) {
+  .contact-header {
+    background-attachment: unset !important;
+  }
+  .contact-form-info > .icons > p > a {
+    font-size: larger;
+  }
+}

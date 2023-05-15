@@ -90,3 +90,10 @@
   width: 100%;
   border-radius: 40px;
 }
+
+/* PHONE VERSION OF ABOUT */
+@media screen and (max-width: 1000px) {
+  .about-header {
+    background-attachment: unset !important;
+  }
+}

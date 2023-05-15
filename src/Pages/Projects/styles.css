@@ -1,93 +1,79 @@
-.homeStyled {
+.swiper {
+  width: 100%;
+  position: relative;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100vmin !important;
+  height: 70vmin !important;
+  user-select: none;
+}
+.swiper-slide > div {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper-slide > div > div {
+  color: white;
+  font-size: 8vmin;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: inset 0 0 0 0 var(--primary);
+}
+.swiper-slide > div > div:hover {
+  color: var(--dark);
+  cursor: pointer;
+  box-shadow: inset 100vmin 0 0 0 var(--primary);
+}
+.swiper-slide > div > div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  z-index: 99;
+}
+.fullPageCont {
   height: 100vh;
   width: 100vw;
-  background-color: var(--light);
-  margin: 0rem;
-  overflow: hidden !important;
-}
-.styledImageTrack {
+  align-items: center;
   display: flex;
-  gap: 2vmin;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transition: all 2s cubic-bezier(0, 1.02, 0.87, 0.94);
-  transform: translate(0%, -50%);
-}
-.selectedPicture {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  align-self: bottom;
-  object-fit: cover;
-  animation-name: fade-in-picture;
-  animation-duration: 2s;
-}
-@keyframes fade-in-picture {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.selectedPictureCont {
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  height: 100%;
+  padding: 0 5vmin;
   overflow: hidden;
+  background: antiquewhite;
 }
-.pictureText {
-  animation-name: fade-in-text;
-  animation-duration: 2s;
-}
-@keyframes fade-in-text {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-.pictureTextCont {
-  position: absolute;
-  overflow: hidden;
-  font-size: 10vmin;
-  color: white;
-  z-index: 3;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  background: none;
+.buttonNext {
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
-}
-.pictureTextCont:hover {
-  --color1: yellow;
-  --color2: gold;
-  --color3: orange;
-  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
-    0 0 40px var(--color3);
-  filter: saturate(30%);
-  transform: translate(-50%, -50%) scale(1.05);
-}
-.pictureTextCont:hover::after {
-  opacity: 1 !important;
-  transform: translate(-50%, -50%);
-}
-.pictureTextCont::after {
-  content: '';
-  transition: all 0.4s ease-in-out;
+  height: 10vmin;
+  color: var(--primary);
+  width: 10vmin;
+  z-index: 999999;
   position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translateX(60%);
-  width: 40%;
-  height: 1vmin;
-  background-color: var(--light);
-  z-index: -1;
-  opacity: 0;
+  top: 40%;
+  left: 90%;
+}
+.buttonPrev {
+  cursor: pointer;
+  height: 10vmin;
+  color: var(--primary);
+  width: 10vmin;
+  z-index: 999999;
+  position: absolute;
+  top: 40%;
+  left: 0%;
 }

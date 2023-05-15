@@ -149,3 +149,20 @@
   color: #4d5053;
   font-size: 14px;
 }
+
+/* PHONE VERSION OF SERVICES */
+@media screen and (max-width: 1000px) {
+  .services-header {
+    background-attachment: unset !important;
+  }
+  .howWeWork {
+    width: 90%;
+    padding: 7% 5%;
+  }
+  .hc-text {
+    width: 100%;
+  }
+  .hc-text-anima {
+    justify-content: center;
+  }
+}

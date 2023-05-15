@@ -78,18 +78,10 @@ export function Home() {
         <div className='homeAboutUs'>
           <div className='hp-subtext'>
             <h1>We Create The Art Of Stylish Living</h1>
-            <p>
-              Mi Life Design is a company dedicated to interior and exterior
-              design of all living spaces. The creative duo Ivana Bogović and
-              Mate Tokić lead a team of experts in the field of design,
-              architecture and construction, which enables our clients to
-              receive a comprehensive service during the implementation of
-              projects.
-            </p>
             <div className='callUs'>
-              <Link to={`/contact`} className='linkAbout'>
+              <Link to={`/projects`} className='linkAbout'>
                 <button>
-                  O nama
+                  Projekti
                   <BsArrowRight
                     style={{ marginLeft: '2%', color: '#CDA274' }}
                   />
@@ -100,9 +92,42 @@ export function Home() {
           <div
             className='hp-img'
             style={{
-              backgroundImage: `url(${ImagesApi[6].pictures[8]})`,
+              backgroundImage: `url(${ImagesApi[5].pictures[2]})`,
             }}
           ></div>
+        </div>
+        <div className='homeProjects'>
+          <h1>Najpopularniji projekti</h1>
+          <div className='hp-list'>
+            {FeaturedProjects.map((item, idx) => {
+              return (
+                <div
+                  onClick={() => {
+                    navigate(`/${item.name}`);
+                  }}
+                  className='hp-project'
+                  key={idx}
+                >
+                  <div className='hp-pro-img'>
+                    <img src={item.image} alt='project'></img>
+                  </div>
+                  <div className='hp-pro-detail'>
+                    <div className='hp-pro-info'>
+                      <p className='hp-prj-title'>{item.name}</p>
+                      <p className='hp-prj-path'>{item.info}</p>
+                    </div>
+                    <div className='hp-pro-btn'>
+                      <Link to={`/${item.name}`}>
+                        <button>
+                          <IoIosArrowForward />
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         <div className='people-thoughts'>
@@ -139,39 +164,6 @@ export function Home() {
           <div className='h-customers'>
             <CountUp duration={4} className='h-cust num' end={30} />
             <p>Zadovoljnih musterija</p>
-          </div>
-        </div>
-        <div className='homeProjects'>
-          <h1>Projekti</h1>
-          <div className='hp-list'>
-            {FeaturedProjects.map((item, idx) => {
-              return (
-                <div
-                  onClick={() => {
-                    navigate(`/${item.name}`);
-                  }}
-                  className='hp-project'
-                  key={idx}
-                >
-                  <div className='hp-pro-img'>
-                    <img src={item.image} alt='project'></img>
-                  </div>
-                  <div className='hp-pro-detail'>
-                    <div className='hp-pro-info'>
-                      <p className='hp-prj-title'>{item.name}</p>
-                      <p className='hp-prj-path'>{item.info}</p>
-                    </div>
-                    <div className='hp-pro-btn'>
-                      <Link to={`/${item.name}`}>
-                        <button>
-                          <IoIosArrowForward />
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
           </div>
         </div>
       </div>

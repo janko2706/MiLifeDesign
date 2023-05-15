@@ -5,6 +5,7 @@
   --primary: #cda274;
   --secondary: #ffffff;
   --dark: #292f36;
+  --primary-dark: #af8252;
   --light: rgb(244, 240, 236);
 }
 
@@ -131,4 +132,23 @@ h1 {
     width: 100% !important;
     margin-bottom: 2vmin;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+  background-color: var(--light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  background-color: var(--primary);
 }
