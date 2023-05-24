@@ -97,6 +97,7 @@
   color: whitesmoke;
   padding-bottom: 3vmin;
   font-weight: 500;
+
   text-transform: uppercase;
   z-index: -1;
   animation-duration: 3s;
@@ -122,6 +123,7 @@
   font-size: 12vmin;
   padding-bottom: 3vmin;
   font-weight: 500;
+  width: 100%;
   text-transform: uppercase;
   animation-duration: 3s;
   animation-name: rotate;
@@ -147,5 +149,9 @@
 @media screen and (max-width: 1000px) {
   .titleStyledz {
     display: none;
+  }
+  .titleStyledStrokedz {
+    top: 115vmin;
+    width: 70%;
   }
 }
