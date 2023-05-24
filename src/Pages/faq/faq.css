@@ -86,3 +86,9 @@
   width: 100%;
   border-radius: 30px;
 }
+/* PHONE VERSION OF FAQ */
+@media screen and (max-width: 1000px) {
+  .faq-header {
+    background-attachment: unset !important;
+  }
+}

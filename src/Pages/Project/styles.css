@@ -142,3 +142,10 @@
 .styles-module_navigation__1pqAE {
   opacity: 1 !important;
 }
+
+/* PHONE VERSION OF PROJECT PAGE */
+@media screen and (max-width: 1000px) {
+  .titleStyledz {
+    display: none;
+  }
+}

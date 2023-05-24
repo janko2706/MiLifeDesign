@@ -94,14 +94,14 @@ export function Footer() {
         <p>
           Copyright © MI Life Design | Designed by{' '}
           <a
-            href='https://janovacoolstranica.com/'
+            href='https://evolve-technologies.netlify.app'
             rel='noreferrer'
             target='_blank'
             style={{
               color: 'black',
             }}
           >
-            Jan
+            Evolve Technologies
           </a>
         </p>
       </div>

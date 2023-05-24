@@ -139,9 +139,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
 .homePlan > a > button {
+  color: black;
   margin: 5% 0;
   font-size: 0.9em;
   width: 25vmin;

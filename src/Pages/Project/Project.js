@@ -24,7 +24,6 @@ const Project = (props) => {
       initial={{ opacity: 0 }}
       exit={{ y: '200%' }}
       animate={{ opacity: 1 }}
-      style={{}}
       transition={{ duration: 0.5, ease: [0.77, 0.16, 0.64, 0.91] }}
     >
       <div
