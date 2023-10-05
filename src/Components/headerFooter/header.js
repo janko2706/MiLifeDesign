@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
-import './header.scss';
-import { ImagesApi } from '../ImagesApi/ImagesApi';
-import { Link } from 'react-router-dom';
+import React, { useRef } from "react";
+import "./header.scss";
+import { ImagesApi } from "../ImagesApi/ImagesApi";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const checkBoxRef = useRef(null);
@@ -12,26 +12,26 @@ export function Header() {
   };
   return (
     <>
-      <input type='checkbox' id='burger-toggle' ref={checkBoxRef} />
-      <label htmlFor='burger-toggle' className='burger-menu'>
-        <div className='line'></div>
-        <div className='line'></div>
-        <div className='line'></div>
+      <input type="checkbox" id="burger-toggle" ref={checkBoxRef} />
+      <label htmlFor="burger-toggle" className="burger-menu">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
       </label>
-      <div className='menu'>
-        <div className='menu-inner'>
-          <ul className='menu-nav'>
-            <li className='menu-nav-item'>
-              <Link className='menu-nav-link' to='/' onClick={closeMenu}>
+      <div className="menu">
+        <div className="menu-inner">
+          <ul className="menu-nav">
+            <li className="menu-nav-item">
+              <Link className="menu-nav-link" to="/" onClick={closeMenu}>
                 <span>
                   <div>Početna</div>
                 </span>
               </Link>
             </li>
-            <li className='menu-nav-item'>
+            <li className="menu-nav-item">
               <Link
-                className='menu-nav-link'
-                to='/projects'
+                className="menu-nav-link"
+                to="/projects"
                 onClick={closeMenu}
               >
                 <span>
@@ -39,17 +39,17 @@ export function Header() {
                 </span>
               </Link>
             </li>
-            <li className='menu-nav-item'>
-              <Link className='menu-nav-link' to='/about' onClick={closeMenu}>
+            <li className="menu-nav-item">
+              <Link className="menu-nav-link" to="/about" onClick={closeMenu}>
                 <span>
                   <div>O nama</div>
                 </span>
               </Link>
             </li>
-            <li className='menu-nav-item'>
+            <li className="menu-nav-item">
               <Link
-                className='menu-nav-link'
-                to='/services'
+                className="menu-nav-link"
+                to="/services"
                 onClick={closeMenu}
               >
                 <span>
@@ -57,60 +57,62 @@ export function Header() {
                 </span>
               </Link>
             </li>
-            <li className='menu-nav-item'>
-              <Link className='menu-nav-link' to='/contact' onClick={closeMenu}>
+            <li className="menu-nav-item">
+              <Link className="menu-nav-link" to="/contact" onClick={closeMenu}>
                 <span>
                   <div>Kontakt</div>
                 </span>
               </Link>
             </li>
-            <li className='menu-nav-item'>
+            {/* TODO UNCOMMENT WHEN TEXT IS CONFIRMED */}
+
+            {/* <li className='menu-nav-item'>
               <Link className='menu-nav-link' to='/faq' onClick={closeMenu}>
                 <span>
                   <div>FAQ</div>
                 </span>
               </Link>
-            </li>
+            </li> */}
           </ul>
-          <div className='gallery'>
-            <div className='title'>
+          <div className="gallery">
+            <div className="title">
               <p>Preporuceno</p>
             </div>
-            <div className='images'>
+            <div className="images">
               <Link
-                className='image-link'
+                className="image-link"
                 to={`/${ImagesApi[0].name}`}
                 onClick={closeMenu}
               >
-                <div className='image' data-label={ImagesApi[0].name}>
-                  <img src={ImagesApi[0].pictures[0]} alt='' />
+                <div className="image" data-label={ImagesApi[0].name}>
+                  <img src={ImagesApi[0].pictures[0]} alt="" />
                 </div>
               </Link>
               <Link
-                className='image-link'
+                className="image-link"
                 to={`/${ImagesApi[1].name}`}
                 onClick={closeMenu}
               >
-                <div className='image' data-label={ImagesApi[1].name}>
-                  <img src={ImagesApi[1].pictures[0]} alt='' />
+                <div className="image" data-label={ImagesApi[1].name}>
+                  <img src={ImagesApi[1].pictures[0]} alt="" />
                 </div>
               </Link>
               <Link
-                className='image-link'
+                className="image-link"
                 to={`/${ImagesApi[2].name}`}
                 onClick={closeMenu}
               >
-                <div className='image' data-label={ImagesApi[2].name}>
-                  <img src={ImagesApi[2].pictures[0]} alt='' />
+                <div className="image" data-label={ImagesApi[2].name}>
+                  <img src={ImagesApi[2].pictures[0]} alt="" />
                 </div>
               </Link>
               <Link
-                className='image-link'
+                className="image-link"
                 to={`/${ImagesApi[4].name}`}
                 onClick={closeMenu}
               >
-                <div className='image' data-label={ImagesApi[4].name}>
-                  <img src={ImagesApi[4].pictures[0]} alt='' />
+                <div className="image" data-label={ImagesApi[4].name}>
+                  <img src={ImagesApi[4].pictures[0]} alt="" />
                 </div>
               </Link>
             </div>

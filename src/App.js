@@ -1,23 +1,22 @@
-import './App.css';
-import React, { useState } from 'react';
-import { Contact } from './Pages/contact/contact';
-import { Header } from './Components/headerFooter/header';
-import { Footer } from './Components/headerFooter/footer';
-import { RestrictedPage } from './Pages/restrictedPage/restricted';
-import { Faq } from './Pages/faq/faq';
-import { About } from './Pages/about/about';
-import Project from './Pages/Project/Project';
-import { NotFound } from './Pages/404/404';
-import { Home } from './Pages/home/home';
-import Projects from './Pages/Projects/Projects';
-import { Services } from './Pages/servicesPage/services';
-import { Terms } from './Pages/Allterms/terms';
-import { Cookies } from './Pages/Allterms/cookies';
-import { Privacy } from './Pages/Allterms/privacy';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import { SmoothScroll } from './smooth';
-import { ImagesApi } from './Components/ImagesApi/ImagesApi';
-import Loader from './Components/Loader/Loader';
+import "./App.css";
+import React, { useState } from "react";
+import { Contact } from "./Pages/contact/contact";
+import { Header } from "./Components/headerFooter/header";
+import { Footer } from "./Components/headerFooter/footer";
+import { RestrictedPage } from "./Pages/restrictedPage/restricted";
+import { About } from "./Pages/about/about";
+import Project from "./Pages/Project/Project";
+import { NotFound } from "./Pages/404/404";
+import { Home } from "./Pages/home/home";
+import Projects from "./Pages/Projects/Projects";
+import { Services } from "./Pages/servicesPage/services";
+import { Terms } from "./Pages/Allterms/terms";
+import { Cookies } from "./Pages/Allterms/cookies";
+import { Privacy } from "./Pages/Allterms/privacy";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { SmoothScroll } from "./smooth";
+import { ImagesApi } from "./Components/ImagesApi/ImagesApi";
+import Loader from "./Components/Loader/Loader";
 
 function App() {
   const [load, setLoad] = useState(false);
@@ -26,10 +25,10 @@ function App() {
   }, 4000);
 
   window.addEventListener(
-    'scroll',
+    "scroll",
     () => {
       document.body.style.setProperty(
-        '--scroll',
+        "--scroll",
         JSON.stringify(
           window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
         )
@@ -42,18 +41,19 @@ function App() {
       <SmoothScroll />
       <Header />
       <Routes>
-        <Route path='/contact' element={<Contact />}></Route>
-        <Route path='/restricted-page' element={<RestrictedPage />}></Route>
-        <Route path='/faq' element={<Faq />}></Route>
-        <Route path='/about' element={<About />}></Route>
-        <Route path='/error' element={<NotFound />}></Route>
-        <Route path='/*' element={<NotFound />}></Route>
-        <Route path='/services' element={<Services />}></Route>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/projects' element={<Projects />}></Route>
-        <Route path='/terms' element={<Terms />}></Route>
-        <Route path='/cookies-policy' element={<Cookies />}></Route>
-        <Route path='/privacy-policy' element={<Privacy />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/restricted-page" element={<RestrictedPage />}></Route>
+        {/* TODO UNCOMMENT WHEN TEXT IS CONFIRMED */}
+        {/* <Route path='/faq' element={<Faq />}></Route> */}
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/error" element={<NotFound />}></Route>
+        <Route path="/*" element={<NotFound />}></Route>
+        <Route path="/services" element={<Services />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/terms" element={<Terms />}></Route>
+        <Route path="/cookies-policy" element={<Cookies />}></Route>
+        <Route path="/privacy-policy" element={<Privacy />}></Route>
         {ImagesApi.map((item, index) => {
           return (
             <Route
